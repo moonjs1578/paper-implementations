@@ -11,9 +11,21 @@ PyTorch implementations of classic deep learning papers for learning and referen
   - Authors: Alex Krizhevsky, Ilya Sutskever, Geoffrey E. Hinton
   - Key contributions: ReLU, Dropout, GPU training, LRN
 
+- **[ResNet (2015)](resnet/)** - Deep Residual Learning for Image Recognition
+  - Status: ✅ Completed
+  - Conference: CVPR 2015 (Best Paper Award 🏆)
+  - Authors: Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun (Microsoft Research)
+  - Key contributions: Residual learning, Skip connections, Very deep networks (152 layers)
+
+### Medical Imaging / Segmentation
+- **[U-Net (2015)](unet/)** - Convolutional Networks for Biomedical Image Segmentation
+  - Status: ✅ Completed
+  - Conference: MICCAI 2015
+  - Authors: Olaf Ronneberger, Philipp Fischer, Thomas Brox (University of Freiburg)
+  - Key contributions: U-shaped encoder-decoder, Skip connections, Efficient with small datasets
+
 ### Coming Soon
 - [ ] **VGGNet (2014)** - Very Deep Convolutional Networks
-- [ ] **ResNet (2015)** - Deep Residual Learning
 - [ ] **GoogLeNet (2014)** - Going Deeper with Convolutions
 
 ## 🚀 Quick Start
@@ -28,10 +40,27 @@ cd paper-implementations
 pip install -r requirements.txt
 ```
 
-### Run AlexNet
+### Usage Examples
+
+#### AlexNet
+
 ```bash
 cd alexnet
-python alexnet.py
+python alexnet_complete.py
+```
+
+#### ResNet (CIFAR-10)
+
+```bash
+cd resnet
+python train.py
+```
+
+#### U-Net (Segmentation)
+
+```bash
+cd unet
+python train.py
 ```
 
 ## 🎯 Goals
